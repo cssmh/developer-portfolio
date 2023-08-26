@@ -141,7 +141,7 @@ main section{
     color: #181818;
 }
 
-#what-i-do-describtion{
+#what-i-do-description{
     padding: 30px 140px;
 }
 
@@ -190,7 +190,7 @@ footer{
     background: #FFF8F3;
     padding: 130px 230px;
 }
-.section-describtion{
+.section-description{
     color: #474747;
     font-size: 16px;
     font-weight: 400;
@@ -215,4 +215,73 @@ textarea {
     background: #FFF;
     border: 0;
     width: 80%;
+}
+/* Responsive */
+
+@media screen and (max-width:576px) {
+    nav, .about-info-container, .skills-container, .resume-container, .resume-container  {
+        flex-direction: column;
+    }
+    .header{
+        background: none;
+    }
+    .banner {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .about {
+        padding: 20px;
+    }
+    #what-i-do-description {
+        padding: 30px;
+    }
+    .resume-container {
+        margin: 20px;
+    }
+    footer {
+        flex-direction: column;
+        padding: 30px;
+    }
+    .footer-column {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    .header{
+        background: none;
+    }
+    .banner {
+        padding: 30px;
+    }
+    nav {
+        margin: 0px 20px;
+    }
+    .btn-primary{
+        margin-bottom: 10px;
+    }
+    .about {
+        padding: 80px;
+    }
+    .about-info-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    main section {
+        margin-top: 70px;
+    }
+    #what-i-do-description {
+        padding: 30px 90px;
+    }
+    .skills-container, .resume-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .resume-container{
+        margin: 20px;
+    }
+    footer {
+        margin-top: 90px;
+        padding: 30px 30px;
+    }
 }
